@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3d5b9f037a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Modal</title>
+</head>
+<body>
+    <div class="modal-box">
+        <h1>Modal Project</h1>
+        <button id="modalOpen" class="heartbeat" onclick="openModal()">Click Here</button>
+    </div>
+
+    <div id="modalBody" class="modal-body inactive">
+        <div class="inner-modal-box">
+            <div class="modal-content">
+                <img src="Snapchat-783997614.jpg" alt="">
+                <h1>sami memon</h1>
+                <h2>backend Developer</h2>
+                <p>Love to work on backend development ,and ready to learn more technologies
+                </p>
+                <ul>
+                    <li><a href="https://github.com/SamiAhmed788" target="_blank"><i class="fa-brands fa-github "></i></a></li>
+                </ul>
+            </div>
+            <a id="close" href="javascript:avoid(0)" onclick="closeModal()"><i  class="fa-solid fa-circle-xmark fa-beat"></i></a>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

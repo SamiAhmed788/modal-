@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-image: url(https://cleanupbritain.org/wp-content/uploads/2017/02/modal-img-1024x544.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.modal-box{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+.modal-box button{
+    width: 25%;
+    margin: 0px auto;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.modal-body{
+    background-color: #000000ba;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+}
+.inner-modal-box{
+    color: #000;
+    background-color: #fff;
+    width: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+}
+.modal-content img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #000;
+}
+.modal-content h2{
+    margin: 0 0 5px 0;
+}
+.modal-content h1{
+    margin: 0;
+}
+.modal-content p{
+    font-size: 14px;
+    line-height: 24px;
+}
+.modal-content ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.modal-content ul li{
+    padding: 0 5px;
+}
+.modal-content ul li i{
+    font-size: 30px;
+    color: green;
+}
+
+
+
+
+.active{
+    display: block;
+}
+.inactive{
+    display: none;
+}
+#close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: red;
+}
+
+
+
+
+
+
+.heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+@keyframes heartbeat {
+from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+}
+10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+}
+17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+}
+33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+}
+45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+}
+}
+  
